@@ -1,3 +1,8 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Café de Pueblo</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Petrona:ital,wght@0,400;0,500;0,600;0,700;1,500&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=Mrs+Saint+Delafield&display=swap">
 <style>
@@ -112,11 +117,13 @@ section{padding:88px 0;}
 
 /* PRODUCTOS */
 .productos .top{display:grid; grid-template-columns:1fr 1fr; gap:48px; align-items:center; margin-bottom:50px;}
+@media (max-width:820px){ .productos .top{grid-template-columns:1fr;} }
 .productos .top img{border-radius:var(--radius); box-shadow:var(--shadow); width:100%; aspect-ratio:1/1; object-fit:cover;}
 .format-toggle{display:inline-flex; background:var(--bg-alt); border-radius:999px; padding:4px; gap:4px; margin-bottom:26px;}
 .format-toggle button{border:none; background:transparent; padding:9px 20px; border-radius:999px; font-weight:600; font-size:14px; cursor:pointer; color:var(--ink-soft); font-family:inherit;}
 .format-toggle button.active{background:var(--morado); color:#FBF3E2;}
 .cards{display:grid; grid-template-columns:1fr 1fr; gap:20px; max-width:640px;}
+@media (max-width:560px){ .cards{grid-template-columns:1fr; max-width:360px;} }
 .card{background:var(--bg-panel); border:1px solid var(--line); border-radius:var(--radius); padding:24px; box-shadow:var(--shadow);}
 .card .size{font-family:'Petrona',serif; font-size:26px; font-weight:600;}
 .card .price{font-size:22px; font-weight:700; color:var(--morado-deep); margin-top:6px;}
@@ -190,7 +197,8 @@ footer .fine{font-size:12.5px; color:rgba(196,182,154,.6); margin-top:6px;}
 .whatsapp-fab:hover{transform:translateY(-2px) scale(1.04);}
 @media (max-width:480px){ .whatsapp-fab{right:14px; bottom:14px; width:50px; height:50px;} }
 </style>
-
+</head>
+<body>
 <header class="nav">
   <div class="bar wrap" style="padding-left:0;padding-right:0;">
     <a class="brand" href="#top">
@@ -546,3 +554,5 @@ El cartero era, sin proponérselo, uno de los personajes más importantes del pu
   });
 })();
 </script>
+</body>
+</html>
