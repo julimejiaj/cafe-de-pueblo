@@ -119,6 +119,10 @@ section{padding:88px 0;}
 .productos .top{display:grid; grid-template-columns:1fr 1fr; gap:48px; align-items:center; margin-bottom:50px;}
 @media (max-width:820px){ .productos .top{grid-template-columns:1fr;} }
 .productos .top img{border-radius:var(--radius); box-shadow:var(--shadow); width:100%; aspect-ratio:1/1; object-fit:cover;}
+.ficha-cafe{display:flex; flex-direction:column; gap:7px; margin-bottom:20px;}
+.ficha-cafe div{font-size:14.5px; color:var(--ink-soft);}
+.ficha-cafe .mono{color:var(--morado); font-size:11px; margin-right:10px; display:inline-block; min-width:78px;}
+.ficha-nota{font-family:'Petrona',serif; font-style:italic; color:var(--ink); font-size:15.5px; margin-bottom:24px; max-width:440px;}
 .format-toggle{display:inline-flex; background:var(--bg-alt); border-radius:999px; padding:4px; gap:4px; margin-bottom:26px;}
 .format-toggle button{border:none; background:transparent; padding:9px 20px; border-radius:999px; font-weight:600; font-size:14px; cursor:pointer; color:var(--ink-soft); font-family:inherit;}
 .format-toggle button.active{background:var(--morado); color:#FBF3E2;}
@@ -255,7 +259,14 @@ footer .fine{font-size:12.5px; color:rgba(196,182,154,.6); margin-top:6px;}
       <div>
         <span class="section-tag mono">El café</span>
         <h2 style="margin-bottom:14px;">Elige tu presentación.</h2>
-        <p style="color:var(--ink-soft); margin-bottom:26px;">Disponible en molido y en grano, en dos tamaños. Escríbenos por WhatsApp para confirmar tu pedido.</p>
+        <p style="color:var(--ink-soft); margin-bottom:22px;">Disponible en molido y en grano, en dos tamaños. Escríbenos por WhatsApp para confirmar tu pedido.</p>
+
+        <div class="ficha-cafe">
+          <div><span class="mono">Origen</span>Andes, Antioquia · 1.800 m s. n. m.</div>
+          <div><span class="mono">Variedad</span>Catimor y Bourbon Rosado</div>
+          <div><span class="mono">Tueste</span>Vibras Nativas, Itagüí</div>
+        </div>
+        <p class="ficha-nota">Sabe a chocolate, caramelo y dulce de leche, con un final limpio y persistente.</p>
 
         <div class="format-toggle" role="tablist" aria-label="Presentación">
           <button type="button" class="active" data-fmt="Molido">Molido</button>
